@@ -1,0 +1,43 @@
+INFO   :: 17:08:10: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 17:08:10: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 17:08:10: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 17:08:10: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 17:08:10: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/AtisFlights-rules.json
+INFO   :: 17:08:10: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/AtisFlights-dbase.db
+INFO   :: 17:08:10: root                                      pydial.py <initialise>373 :  Seed = 961493444
+INFO   :: 17:08:10: root                                      pydial.py <initialise>374 :  Root = /mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial
+DIAL   :: 17:08:10: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'AtisFlights']: ***
+INFO   :: 17:08:10: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:08:10: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 17:08:10: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 17:08:10: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 17:08:10: root                                    Agent.py <_hand_control>479 :  Domain topicmanager is both already running and has control
+DIAL   :: 17:08:10: root                                      Agent.py <_print_turn>588 :  ** Turn 0 **
+DIAL   :: 17:08:10: root                                   Agent.py <_print_sys_act>603 :  | Sys > hello()
+DIAL   :: 17:08:10: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: topicmanager
+DIAL   :: 17:08:15: root                                    Agent.py <continue_call>236 :  user input: [('restaurant', 1.0)]
+DIAL   :: 17:08:15: root                                      Agent.py <_print_turn>588 :  ** Turn 1 **
+INFO   :: 17:08:15: root                         RuleTopicTrackers.py <infer_domain>154 :  CamRestaurants keyword found in: restaurant
+INFO   :: 17:08:15: root                              TopicTracking.py <track_topic>140 :  TopicTracker believes we switched domains. From topicmanager to CamRestaurants
+INFO   :: 17:08:15: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 17:08:15: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: CamRestaurants
+WARNING:: 17:08:15: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+INFO   :: 17:08:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=restaurant)', 1.0]]
+INFO   :: 17:08:16: root                                            SemI.py <decode>197 :  [('inform(type=restaurant)', 1.0)]
+INFO   :: 17:08:16: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=restaurant)', 1.0)]
+INFO   :: 17:08:16: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=restaurant)', 1.0)]
+DIAL   :: 17:08:16: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(area)
+DIAL   :: 17:08:16: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants

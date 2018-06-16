@@ -1,0 +1,69 @@
+INFO   :: 16:29:15: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 16:29:15: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 16:29:15: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 16:29:15: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 16:29:15: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/AtisFlights-rules.json
+INFO   :: 16:29:15: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/AtisFlights-dbase.db
+INFO   :: 16:29:15: root                                      pydial.py <initialise>373 :  Seed = 705390444
+INFO   :: 16:29:15: root                                      pydial.py <initialise>374 :  Root = /mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial
+DIAL   :: 16:29:15: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'AtisFlights']: ***
+INFO   :: 16:29:15: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:29:15: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 16:29:15: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 16:29:15: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 16:29:15: root                                    Agent.py <_hand_control>479 :  Domain topicmanager is both already running and has control
+DIAL   :: 16:29:15: root                                      Agent.py <_print_turn>588 :  ** Turn 0 **
+DIAL   :: 16:29:15: root                                   Agent.py <_print_sys_act>603 :  | Sys > hello()
+DIAL   :: 16:29:15: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: topicmanager
+DIAL   :: 16:29:27: root                                    Agent.py <continue_call>236 :  user input: [("i'm looking for a flight", 1.0)]
+DIAL   :: 16:29:27: root                                      Agent.py <_print_turn>588 :  ** Turn 1 **
+INFO   :: 16:29:27: root                         RuleTopicTrackers.py <infer_domain>154 :  AtisFlights keyword found in: i'm looking for a flight
+INFO   :: 16:29:27: root                              TopicTracking.py <track_topic>140 :  TopicTracker believes we switched domains. From topicmanager to AtisFlights
+INFO   :: 16:29:27: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: AtisFlights
+INFO   :: 16:29:27: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: AtisFlights
+WARNING:: 16:29:27: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+INFO   :: 16:29:29: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=flight)', 1.0]]
+INFO   :: 16:29:29: root                                            SemI.py <decode>197 :  [('inform(type=flight)', 1.0)]
+INFO   :: 16:29:29: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=flight)', 1.0)]
+INFO   :: 16:29:29: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=flight)', 1.0)]
+DIAL   :: 16:29:30: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(fromcity)
+DIAL   :: 16:29:30: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: AtisFlights
+ERROR  :: 16:29:30: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.TypeError'>( 'NoneType' object is not iterable )
+          Traceback (most recent call last):
+            File "pydial.py", line 1142, in <module>
+              run()
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "pydial.py", line 1129, in chat_command
+              hub.run()
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Texthub.py", line 118, in run
+              sys_act = self.agent.continue_call(asr_info = [(obs,1.0)], domainString = domain)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 292, in continue_call
+              self.prompt_str = self._agents_semo(sys_act)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 689, in _agents_semo
+              prompt_str = self.semo_manager.generate(sys_act, domainTag=self.topic_tracker.operatingDomain)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semo/SemOManager.py", line 151, in generate
+              return self.semoManagers[domainTag].generate(act_s)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semo/RuleSemOMethods.py", line 647, in generate
+              return self.generator.transform(act)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semo/RuleSemOMethods.py", line 568, in transform
+              best = self.compute_ftn(best, best_non_term_map)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semo/RuleSemOMethods.py", line 580, in compute_ftn
+              for i, word in enumerate(input_words):
+          TypeError: 'NoneType' object is not iterable
+          

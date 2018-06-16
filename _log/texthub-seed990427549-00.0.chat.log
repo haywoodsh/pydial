@@ -1,0 +1,131 @@
+INFO   :: 14:56:31: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 14:56:31: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 14:56:31: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 14:56:31: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 14:56:31: root                                      pydial.py <initialise>373 :  Seed = 990427549
+INFO   :: 14:56:31: root                                      pydial.py <initialise>374 :  Root = /mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial
+DIAL   :: 14:56:31: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels']: ***
+INFO   :: 14:56:31: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:31: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:56:32: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 14:56:32: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 14:56:32: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 14:56:32: root                                    Agent.py <_hand_control>479 :  Domain topicmanager is both already running and has control
+DIAL   :: 14:56:32: root                                      Agent.py <_print_turn>588 :  ** Turn 0 **
+DIAL   :: 14:56:32: root                                   Agent.py <_print_sys_act>603 :  | Sys > hello()
+DIAL   :: 14:56:32: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: topicmanager
+DIAL   :: 14:56:54: root                                    Agent.py <continue_call>236 :  user input: [("i'm looking for a restaurant", 1.0)]
+DIAL   :: 14:56:54: root                                      Agent.py <_print_turn>588 :  ** Turn 1 **
+INFO   :: 14:56:54: root                         RuleTopicTrackers.py <infer_domain>154 :  CamRestaurants keyword found in: i'm looking for a restaurant
+INFO   :: 14:56:54: root                              TopicTracking.py <track_topic>140 :  TopicTracker believes we switched domains. From topicmanager to CamRestaurants
+INFO   :: 14:56:54: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:56:54: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: CamRestaurants
+WARNING:: 14:56:54: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+INFO   :: 14:56:54: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=restaurant)', 1.0]]
+INFO   :: 14:56:54: root                                            SemI.py <decode>197 :  [('inform(type=restaurant)', 1.0)]
+INFO   :: 14:56:54: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=restaurant)', 1.0)]
+INFO   :: 14:56:54: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=restaurant)', 1.0)]
+DIAL   :: 14:56:54: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(area)
+DIAL   :: 14:56:54: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:07: root                                    Agent.py <continue_call>236 :  user input: [('south', 1.0)]
+DIAL   :: 14:57:07: root                                      Agent.py <_print_turn>588 :  ** Turn 2 **
+INFO   :: 14:57:07: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:07: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:07: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(area=south)', 1.0]]
+INFO   :: 14:57:07: root                                            SemI.py <decode>197 :  [('inform(area=south)', 1.0)]
+INFO   :: 14:57:07: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(area=south)', 1.0)]
+INFO   :: 14:57:07: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(area=south)', 1.0)]
+DIAL   :: 14:57:07: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(food)
+DIAL   :: 14:57:07: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:17: root                                    Agent.py <continue_call>236 :  user input: [('chinese', 1.0)]
+DIAL   :: 14:57:17: root                                      Agent.py <_print_turn>588 :  ** Turn 3 **
+INFO   :: 14:57:17: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:17: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(food=chinese)', 1.0]]
+INFO   :: 14:57:17: root                                            SemI.py <decode>197 :  [('inform(food=chinese)', 1.0)]
+INFO   :: 14:57:17: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(food=chinese)', 1.0)]
+INFO   :: 14:57:17: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(food=chinese)', 1.0)]
+DIAL   :: 14:57:17: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(pricerange)
+DIAL   :: 14:57:17: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:20: root                                    Agent.py <continue_call>236 :  user input: [('expensive', 1.0)]
+DIAL   :: 14:57:20: root                                      Agent.py <_print_turn>588 :  ** Turn 4 **
+INFO   :: 14:57:20: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:20: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:20: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(pricerange=expensive)', 1.0]]
+INFO   :: 14:57:20: root                                            SemI.py <decode>197 :  [('inform(pricerange=expensive)', 1.0)]
+INFO   :: 14:57:20: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(pricerange=expensive)', 1.0)]
+INFO   :: 14:57:20: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(pricerange=expensive)', 1.0)]
+DIAL   :: 14:57:20: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(food="chinese",pricerange="expensive",name="the good luck chinese food takeaway",area="south")
+DIAL   :: 14:57:20: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:29: root                                    Agent.py <continue_call>236 :  user input: [('west', 1.0)]
+DIAL   :: 14:57:29: root                                      Agent.py <_print_turn>588 :  ** Turn 5 **
+INFO   :: 14:57:29: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:29: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:29: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(area=west)', 1.0]]
+INFO   :: 14:57:29: root                                            SemI.py <decode>197 :  [('inform(area=west)', 1.0)]
+INFO   :: 14:57:29: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(area=west)', 1.0)]
+INFO   :: 14:57:29: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(area=west)', 1.0)]
+DIAL   :: 14:57:29: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(name="none",food="chinese",pricerange="expensive",area="west")
+DIAL   :: 14:57:29: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:39: root                                    Agent.py <continue_call>236 :  user input: [('east', 1.0)]
+DIAL   :: 14:57:39: root                                      Agent.py <_print_turn>588 :  ** Turn 6 **
+INFO   :: 14:57:39: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:39: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(area=east)', 1.0]]
+INFO   :: 14:57:40: root                                            SemI.py <decode>197 :  [('inform(area=east)', 1.0)]
+INFO   :: 14:57:40: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(area=east)', 1.0)]
+INFO   :: 14:57:40: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(area=east)', 1.0)]
+DIAL   :: 14:57:40: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(food="chinese",pricerange="expensive",name="yu garden",area="east")
+DIAL   :: 14:57:40: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 14:57:45: root                                    Agent.py <continue_call>236 :  user input: [('north', 1.0)]
+DIAL   :: 14:57:45: root                                      Agent.py <_print_turn>588 :  ** Turn 7 **
+INFO   :: 14:57:45: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 14:57:45: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 14:57:45: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(area=north)', 1.0]]
+INFO   :: 14:57:45: root                                            SemI.py <decode>197 :  [('inform(area=north)', 1.0)]
+INFO   :: 14:57:45: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(area=north)', 1.0)]
+INFO   :: 14:57:45: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(area=north)', 1.0)]
+DIAL   :: 14:57:45: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(food="chinese",pricerange="expensive",name="hakka",area="north")
+DIAL   :: 14:57:45: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 15:03:00: root                                    Agent.py <continue_call>236 :  user input: [('address', 1.0)]
+DIAL   :: 15:03:00: root                                      Agent.py <_print_turn>588 :  ** Turn 8 **
+INFO   :: 15:03:00: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 15:03:00: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 15:03:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'request(addr)', 1.0]]
+INFO   :: 15:03:00: root                                            SemI.py <decode>197 :  [('request(addr)', 1.0)]
+INFO   :: 15:03:00: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('request(addr)', 1.0)]
+INFO   :: 15:03:00: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('request(addr)', 1.0)]
+DIAL   :: 15:03:00: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(name="hakka",addr="milton road chesterton")
+DIAL   :: 15:03:00: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 15:04:35: root                                    Agent.py <continue_call>236 :  user input: [('west', 1.0)]
+DIAL   :: 15:04:35: root                                      Agent.py <_print_turn>588 :  ** Turn 9 **
+INFO   :: 15:04:35: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 15:04:35: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 15:04:36: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(area=west)', 1.0]]
+INFO   :: 15:04:36: root                                            SemI.py <decode>197 :  [('inform(area=west)', 1.0)]
+INFO   :: 15:04:36: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(area=west)', 1.0)]
+INFO   :: 15:04:36: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(area=west)', 1.0)]
+DIAL   :: 15:04:36: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(name="none",food="chinese",pricerange="expensive",area="west")
+DIAL   :: 15:04:36: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants
+DIAL   :: 15:04:52: root                                    Agent.py <continue_call>236 :  user input: [('where is the address', 1.0)]
+DIAL   :: 15:04:52: root                                      Agent.py <_print_turn>588 :  ** Turn 10 **
+INFO   :: 15:04:52: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamRestaurants
+INFO   :: 15:04:52: root                                    Agent.py <_hand_control>479 :  Domain CamRestaurants is both already running and has control
+INFO   :: 15:04:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'request(addr)', 1.0]]
+INFO   :: 15:04:52: root                                            SemI.py <decode>197 :  [('request(addr)', 1.0)]
+INFO   :: 15:04:52: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('request(addr)', 1.0)]
+INFO   :: 15:04:52: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('request(addr)', 1.0)]
+DIAL   :: 15:04:52: root                                   Agent.py <_print_sys_act>603 :  | Sys > inform(name="hakka",addr="milton road chesterton")
+DIAL   :: 15:04:52: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: CamRestaurants

@@ -1,0 +1,52 @@
+INFO   :: 16:03:56: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 16:03:56: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 16:03:56: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 16:03:56: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 16:03:56: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/AtisFlights-rules.json
+INFO   :: 16:03:56: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/AtisFlights-dbase.db
+INFO   :: 16:03:56: root                                      pydial.py <initialise>373 :  Seed = 633647363
+INFO   :: 16:03:56: root                                      pydial.py <initialise>374 :  Root = /mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial
+DIAL   :: 16:03:56: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'AtisFlights']: ***
+INFO   :: 16:03:56: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 16:03:56: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:03:56: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 16:03:56: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+ERROR  :: 16:03:56: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.SyntaxError'>( invalid syntax (RegexSemI_AtisFlights.py, line 73) )
+          Traceback (most recent call last):
+            File "pydial.py", line 1142, in <module>
+              run()
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "pydial.py", line 1128, in chat_command
+              hub = Texthub.ConsoleHub()
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Texthub.py", line 78, in __init__
+              self.agent = DialogueAgent(hub_id='texthub')
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 142, in __init__
+              self.restart_agent(session_id=None)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 388, in restart_agent
+              self._hand_control(domainString=self.topic_tracker.operatingDomain, previousDomainString=None)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 465, in _hand_control
+              self._bootup(domainString, previousDomainString)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Agent.py", line 494, in _bootup
+              self.semi_belief_manager.bootup(domainString, previousDomainString)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 188, in bootup
+              self._load_domains_semantic_belief_tracker(domainString)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semanticbelieftracking/SemanticBeliefTrackingManager.py", line 236, in _load_domains_semantic_belief_tracker
+              self.domainSemiBelieftrackers[domainString] = ModularSemanticBeliefTracker(domainString)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 60, in __init__
+              self.semi_manager = ModularSemanticBeliefTracker.getSemiManager()
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semanticbelieftracking/ModularSemanticBeliefTracker.py", line 123, in getSemiManager
+              ModularSemanticBeliefTracker.semi_manager = SemI.SemIManager()
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semi/SemI.py", line 91, in __init__
+              self.semiManagers[domainTag] = self._load_domains_semi(dstring=domainTag)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semi/SemI.py", line 141, in _load_domains_semi
+              parsing_method = RegexSemI(domainTag=dstring)
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semi/RuleSemIMethods.py", line 76, in __init__
+              parser_module = __import__("semi.RegexSemI_"+self.domain_tag, fromlist=["RegexSemI_"+self.domain_tag])
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/semi/RegexSemI_AtisFlights.py", line 73
+              self.request_regex[slot] = self.rREQUEST+"\ "+self.slot_vocab[slot]dddddd
+                                                                                      ^
+          SyntaxError: invalid syntax
+          

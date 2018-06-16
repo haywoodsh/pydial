@@ -1,0 +1,193 @@
+INFO   :: 14:37:55: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 14:37:55: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 14:37:55: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 14:37:55: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 14:37:55: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 14:37:55: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+INFO   :: 14:37:55: root                                     DialogueServer.py <run>402 :  Server starting localhost:8082 (level=info)
+INFO   :: 14:37:55: root              DialogueServer.py <parse_additional_information>4 :  [DialPort]: context information received in JSON data
+INFO   :: 14:37:55: root              DialogueServer.py <parse_additional_information>4 :  External instruction to dialogue server to hand control to domain CamHotels
+INFO   :: 14:37:55: root                                       Agent.py <start_call>832 :  Agent Smith has been reactivated.
+DIAL   :: 14:37:55: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 14:37:55: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: CamHotels
+WARNING:: 14:37:55: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+DIAL   :: 14:37:55: root                                      Agent.py <_print_turn>577 :  Turn 0
+DIAL   :: 14:37:55: root                                   Agent.py <_print_sys_act>592 :  Sys > request(area)
+DIAL   :: 14:37:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:55: root                                 DialogueServer.py <do_POST>204 :  A new call has started. Session: local-audio-160303_6672 
+INFO   :: 14:37:55: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: What part of town do you have in mind? to tts.
+INFO   :: 14:37:55: root              DialogueServer.py <parse_additional_information>4 :  [DialPort]: context information received in JSON data
+INFO   :: 14:37:55: root              DialogueServer.py <parse_additional_information>4 :  External instruction to dialogue server to hand control to domain CamHotels
+INFO   :: 14:37:55: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 14:37:55: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+INFO   :: 14:37:55: root                                    Agent.py <_hand_control>471 :  Domain topicmanager is both already running and has control
+INFO   :: 14:37:55: root                                        Agent.py <new_agent>935 :  Agent Smith1 has been created.
+DIAL   :: 14:37:55: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 14:37:55: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: CamHotels
+WARNING:: 14:37:55: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+DIAL   :: 14:37:55: root                                      Agent.py <_print_turn>577 :  Turn 0
+DIAL   :: 14:37:55: root                                   Agent.py <_print_sys_act>592 :  Sys > request(area)
+DIAL   :: 14:37:55: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>204 :  A new call has started. Session: local-audio-160303_6281 
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: What part of town do you have in mind? to tts.
+INFO   :: 14:37:56: root              DialogueServer.py <parse_additional_information>4 :  [DialPort]: context information received in JSON data
+INFO   :: 14:37:56: root              DialogueServer.py <parse_additional_information>4 :  External instruction to dialogue server to hand control to domain CamHotels
+INFO   :: 14:37:56: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 14:37:56: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+INFO   :: 14:37:56: root                                    Agent.py <_hand_control>471 :  Domain topicmanager is both already running and has control
+INFO   :: 14:37:56: root                                        Agent.py <new_agent>935 :  Agent Smith2 has been created.
+DIAL   :: 14:37:56: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 14:37:56: root                                    Agent.py <_hand_control>454 :  Launching Dialogue Manager for domain: CamHotels
+WARNING:: 14:37:56: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+DIAL   :: 14:37:56: root                                      Agent.py <_print_turn>577 :  Turn 0
+DIAL   :: 14:37:56: root                                   Agent.py <_print_sys_act>592 :  Sys > request(area)
+DIAL   :: 14:37:56: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>204 :  A new call has started. Session: local-audio-160303_3579 
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: What part of town do you have in mind? to tts.
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6672 with agent_id Smith 
+INFO   :: 14:37:56: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:56: root                                    Agent.py <continue_call>233 :  user input: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:56: root                                      Agent.py <_print_turn>577 :  Turn 1
+INFO   :: 14:37:56: root                         RuleTopicTrackers.py <infer_domain>152 :  CamHotels keyword found in: i want a cheap hotel
+INFO   :: 14:37:56: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:56: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:56: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(kind=hotel)', 1.0]]
+INFO   :: 14:37:56: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(pricerange=cheap)', 1.0]]
+INFO   :: 14:37:56: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=placetostay)', 1.0]]
+INFO   :: 14:37:56: root                                            SemI.py <decode>197 :  [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:56: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:56: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+DIAL   :: 14:37:56: root                                   Agent.py <_print_sys_act>592 :  Sys > confirm(kind="hotel")
+DIAL   :: 14:37:56: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Let me confirm you want a hotel? to tts.
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6281 with agent_id Smith1 
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:57: root                                    Agent.py <continue_call>233 :  user input: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:57: root                                      Agent.py <_print_turn>577 :  Turn 1
+INFO   :: 14:37:57: root                         RuleTopicTrackers.py <infer_domain>152 :  CamHotels keyword found in: i want a cheap hotel
+INFO   :: 14:37:57: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:57: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(kind=hotel)', 1.0]]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(pricerange=cheap)', 1.0]]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=placetostay)', 1.0]]
+INFO   :: 14:37:57: root                                            SemI.py <decode>197 :  [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:57: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+DIAL   :: 14:37:57: root                                   Agent.py <_print_sys_act>592 :  Sys > confirm(kind="hotel")
+DIAL   :: 14:37:57: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Let me confirm you want a hotel? to tts.
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_3579 with agent_id Smith2 
+INFO   :: 14:37:57: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:57: root                                    Agent.py <continue_call>233 :  user input: [(u'i want a cheap hotel', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:57: root                                      Agent.py <_print_turn>577 :  Turn 1
+INFO   :: 14:37:57: root                         RuleTopicTrackers.py <infer_domain>152 :  CamHotels keyword found in: i want a cheap hotel
+INFO   :: 14:37:57: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:57: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(kind=hotel)', 1.0]]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(pricerange=cheap)', 1.0]]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=placetostay)', 1.0]]
+INFO   :: 14:37:57: root                                            SemI.py <decode>197 :  [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:57: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+INFO   :: 14:37:57: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=placetostay,kind=hotel,pricerange=cheap)', 10.0), ('', -1)]
+DIAL   :: 14:37:57: root                                   Agent.py <_print_sys_act>592 :  Sys > confirm(kind="hotel")
+DIAL   :: 14:37:57: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Let me confirm you want a hotel? to tts.
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6672 with agent_id Smith 
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                    Agent.py <continue_call>233 :  user input: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                      Agent.py <_print_turn>577 :  Turn 2
+INFO   :: 14:37:58: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:58: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
+INFO   :: 14:37:58: root                                            SemI.py <decode>197 :  [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 10.0), ('', -1)]
+DIAL   :: 14:37:58: root                                   Agent.py <_print_sys_act>592 :  Sys > bye()
+DIAL   :: 14:37:58: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>263 :  Agent Smith is ending dialogue
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Thank you, goodbye..  Please now enter the 5 digit task number followed by the hash key to tts.
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6281 with agent_id Smith1 
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                    Agent.py <continue_call>233 :  user input: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                      Agent.py <_print_turn>577 :  Turn 2
+INFO   :: 14:37:58: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:58: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
+INFO   :: 14:37:58: root                                            SemI.py <decode>197 :  [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 10.0), ('', -1)]
+DIAL   :: 14:37:58: root                                   Agent.py <_print_sys_act>592 :  Sys > bye()
+DIAL   :: 14:37:58: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>263 :  Agent Smith1 is ending dialogue
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Thank you, goodbye..  Please now enter the 5 digit task number followed by the hash key to tts.
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_3579 with agent_id Smith2 
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>239 :  ASR: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                    Agent.py <continue_call>233 :  user input: [(u'bye', 10.0), (u'rhubarb rhubarb', -1)]
+DIAL   :: 14:37:58: root                                      Agent.py <_print_turn>577 :  Turn 2
+INFO   :: 14:37:58: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: CamHotels
+INFO   :: 14:37:58: root                                    Agent.py <_hand_control>471 :  Domain CamHotels is both already running and has control
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [['bye()', 1.0]]
+INFO   :: 14:37:58: root                                            SemI.py <decode>197 :  [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('bye()', 10.0), ('', -1)]
+INFO   :: 14:37:58: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('bye()', 10.0), ('', -1)]
+DIAL   :: 14:37:58: root                                   Agent.py <_print_sys_act>592 :  Sys > bye()
+DIAL   :: 14:37:58: root                                     Agent.py <_agents_semo>680 :  Domain with CONTROL: CamHotels
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>263 :  Agent Smith2 is ending dialogue
+INFO   :: 14:37:58: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Thank you, goodbye..  Please now enter the 5 digit task number followed by the hash key to tts.
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6672 with agent_id Smith 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>263 :  Agent Smith is ending dialogue
+INFO   :: 14:37:59: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 30003 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>272 :  task_id 10001
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>283 :  Successfully obtained a task
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.  Have you found all the information you were looking for? Please enter one for yes, and zero for no. to tts.
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6281 with agent_id Smith1 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>263 :  Agent Smith1 is ending dialogue
+INFO   :: 14:37:59: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 30003 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>272 :  task_id 10001
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>283 :  Successfully obtained a task
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.  Have you found all the information you were looking for? Please enter one for yes, and zero for no. to tts.
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_3579 with agent_id Smith2 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>263 :  Agent Smith2 is ending dialogue
+INFO   :: 14:37:59: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 30003 
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>272 :  task_id 10001
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>283 :  Successfully obtained a task
+INFO   :: 14:37:59: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.  Have you found all the information you were looking for? Please enter one for yes, and zero for no. to tts.
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6672 with agent_id Smith 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>263 :  Agent Smith is ending dialogue
+INFO   :: 14:38:00: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 1 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>296 :  Subjective feedback 1
+INFO   :: 14:38:00: root                                         Agent.py <end_call>874 :  Ending agents Smith call
+WARNING:: 14:38:00: root                           PolicyManager.py <finalizeRecord>166 :  Final reward in domain: topicmanager is None - Should mean domain wasnt used in dialog
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  Evaluation of domain: CamHotels --evaluated by: objective success evaluator
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  rew = -2, suc = 0, turn = 2
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.You can now hang up. to tts.
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_6281 with agent_id Smith1 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>263 :  Agent Smith1 is ending dialogue
+INFO   :: 14:38:00: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 1 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>296 :  Subjective feedback 1
+INFO   :: 14:38:00: root                                         Agent.py <end_call>874 :  Ending agents Smith1 call
+WARNING:: 14:38:00: root                           PolicyManager.py <finalizeRecord>166 :  Final reward in domain: topicmanager is None - Should mean domain wasnt used in dialog
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  Evaluation of domain: CamHotels --evaluated by: objective success evaluator
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  rew = -2, suc = 0, turn = 2
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.You can now hang up. to tts.
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>223 :  Continuing session: local-audio-160303_3579 with agent_id Smith2 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>263 :  Agent Smith2 is ending dialogue
+INFO   :: 14:38:00: root                               DialogueServer.py <_get_DTMF>527 :  DialogueServer received DTMF : 1 
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>296 :  Subjective feedback 1
+INFO   :: 14:38:00: root                                         Agent.py <end_call>874 :  Ending agents Smith2 call
+WARNING:: 14:38:00: root                           PolicyManager.py <finalizeRecord>166 :  Final reward in domain: topicmanager is None - Should mean domain wasnt used in dialog
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  Evaluation of domain: CamHotels --evaluated by: objective success evaluator
+DIAL   :: 14:38:00: root                               EvaluationManager.py <_prstr>177 :  rew = -2, suc = 0, turn = 2
+INFO   :: 14:38:00: root                                 DialogueServer.py <do_POST>328 :  Sending prompt: Got it, thanks.You can now hang up. to tts.

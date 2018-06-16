@@ -1,0 +1,20 @@
+# --------------- RULES --------------------------
+
+hello() : "Welcome to the Atis Flights dialogue system. How may I help you?";
+hello(help): "Sorry, I cannot understand you. Please tell me again what you are looking for";
+hello(more) : "Can I help you with anything else?";
+null() : "Sorry I am a bit confused; please tell me again what you are looking for.";
+repeat() : "Could you please repeat that?";
+bye() : "Thank you, goodbye.";
+
+request(fromcity) : "From which city would you like to depart?";
+request(tocity) : "To which city would you like to arrive?";
+request(nonstop) : "Do you want a direct flight or with stops?";
+
+# Recomendation inform()
+inform(name='none',fromcity=$Z, tocity=$Y) : "Sorry, there are no flights from $Z to $Y.";
+inform(name=$W,fromairport=$A) : "The flight with code $W arrives at $A.";
+inform(name=$W,toairport=$A) : "The flight with code $W arrives at $A.";
+inform(name=$W,fromtime=$A) : "The flight with code $W departs at $A.";
+inform(name=$W,totime=$A) : "The flight with code $W arrives at $A.";
+inform(name=$W,totaltime=$A) : "The flight with code $W lasts $A.";

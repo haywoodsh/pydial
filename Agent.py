@@ -189,7 +189,10 @@ class DialogueAgent(object):
         
         state = self.semi_belief_manager.update_belief_state(ASR_obs=None, sys_act=last_sys_act,
                                                      dstring=currentDomain, turn=self.currentTurn,hub_id = self.hub_id)
-        
+        try:
+            print 'State', state
+        except:
+            print 'Error'
         
         # 2. Policy -- Determine system act/response
         sys_act = self.policy_manager.act_on(dstring=self.topic_tracker.operatingDomain, 
@@ -268,7 +271,12 @@ class DialogueAgent(object):
         
         state = self.semi_belief_manager.update_belief_state(ASR_obs=asr_info, sys_act=prev_sys_act,
                                                      dstring=currentDomain, turn=self.currentTurn,hub_id = self.hub_id, sim_lvl=self.sim_level)
-        
+
+        try:
+            print 'State', state
+        except:
+            print 'Error'
+
         self._print_usr_act(state, currentDomain)
         
         # 2. Policy -- Determine system act/response
@@ -279,7 +287,7 @@ class DialogueAgent(object):
         sys_act = self._check_ENDING_CALL(state, sys_act)  # NB: this may change the self.prompt_str
 
         self._print_sys_act(sys_act)
-
+        print "sys_act", sys_act
         # SEMO:
         self.prompt_str = self._agents_semo(sys_act)
         sys_act.prompt = self.prompt_str

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="shannohd@phoenix.ims.uni-stuttgart.de:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mount/arbeitsdaten/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial " local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

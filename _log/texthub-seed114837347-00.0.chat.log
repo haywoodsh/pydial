@@ -1,0 +1,57 @@
+INFO   :: 17:11:08: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamRestaurants-rules.json
+INFO   :: 17:11:08: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamRestaurants-dbase.db
+INFO   :: 17:11:08: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/CamHotels-rules.json
+INFO   :: 17:11:08: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/CamHotels-dbase.db
+INFO   :: 17:11:08: root                       FlatOntologyManager.py <_set_ontology>93 :  Loading ontology: ontology/ontologies/AtisFlights-rules.json
+INFO   :: 17:11:08: root                            FlatOntologyManager.py <_set_db>108 :  Loading database: ontology/ontologies/AtisFlights-dbase.db
+INFO   :: 17:11:08: root                                      pydial.py <initialise>373 :  Seed = 114837347
+INFO   :: 17:11:08: root                                      pydial.py <initialise>374 :  Root = /mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial
+DIAL   :: 17:11:08: root                                   pydial.py <chat_command>1125 :  *** Chatting with policies ['CamRestaurants', 'CamHotels', 'AtisFlights']: ***
+INFO   :: 17:11:08: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: topicmanager
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                                      RegexSemI.py <__init__>80 :  No rTYPE regex has been set.
+WARNING:: 17:11:08: root                     PolicyManager.py <_load_domains_policy>229 :  No policy section specified for domain: topicmanager - defaulting to HDC
+WARNING:: 17:11:08: root                                             Texthub.py <run>87 :  NOTE: texthub is not using any error simulation at present.
+DIAL   :: 17:11:08: root                                       Agent.py <start_call>171 :  >> NEW DIALOGUE SESSION. Number: 1
+INFO   :: 17:11:08: root                                    Agent.py <_hand_control>479 :  Domain topicmanager is both already running and has control
+DIAL   :: 17:11:08: root                                      Agent.py <_print_turn>588 :  ** Turn 0 **
+DIAL   :: 17:11:08: root                                   Agent.py <_print_sys_act>603 :  | Sys > hello()
+DIAL   :: 17:11:08: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: topicmanager
+DIAL   :: 17:11:13: root                                    Agent.py <continue_call>236 :  user input: [('flight', 1.0)]
+DIAL   :: 17:11:13: root                                      Agent.py <_print_turn>588 :  ** Turn 1 **
+INFO   :: 17:11:13: root                         RuleTopicTrackers.py <infer_domain>154 :  AtisFlights keyword found in: flight
+INFO   :: 17:11:13: root                              TopicTracking.py <track_topic>140 :  TopicTracker believes we switched domains. From topicmanager to AtisFlights
+INFO   :: 17:11:13: root                              TopicTracking.py <track_topic>146 :  After user_act - domain is now: AtisFlights
+INFO   :: 17:11:13: root                                    Agent.py <_hand_control>462 :  Launching Dialogue Manager for domain: AtisFlights
+WARNING:: 17:11:13: root                                      HDCPolicy.py <__init__>82 :  Policy file is given: , but policy type is set to hdc. Ignoring the given policy file and using hdc policy.
+INFO   :: 17:11:14: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [[u'inform(type=flight)', 1.0]]
+INFO   :: 17:11:14: root                                            SemI.py <decode>197 :  [('inform(type=flight)', 1.0)]
+INFO   :: 17:11:14: root               SemIContextUtils.py <_add_context_to_user_act>61 :  Possibly adding context to user semi hyps: [('inform(type=flight)', 1.0)]
+INFO   :: 17:11:14: root         ModularSemanticBeliefTracker.p <update_belief_state>86 :  SemI   > [('inform(type=flight)', 1.0)]
+DIAL   :: 17:11:15: root                                   Agent.py <_print_sys_act>603 :  | Sys > request(fromcity)
+DIAL   :: 17:11:15: root                                     Agent.py <_agents_semo>688 :  Domain with CONTROL: AtisFlights
+ERROR  :: 17:12:33: root                              ContextLogger.py <_exceptHook>263 :  Uncaught exception: <type 'exceptions.EOFError'>(  )
+          Traceback (most recent call last):
+            File "pydial.py", line 1142, in <module>
+              run()
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 196, in autocmds
+              add_verbosity_option=add_verbosity_option)
+            File "/home/users2/shannohd/.local/lib/python2.7/site-packages/scriptine/command.py", line 105, in parse_and_run_function
+              return function(*args[:len(required_args)], **kw)
+            File "pydial.py", line 1129, in chat_command
+              hub.run()
+            File "/mount/arbeitsdaten31/studenten1/team-lab-phonetics/2018/groups/8/pydial_working_directory/pydial/Texthub.py", line 92, in run
+              obs = raw_input('User   > ')
+          EOFError
+          
