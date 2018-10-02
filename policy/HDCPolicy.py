@@ -109,6 +109,10 @@ class HDCPolicy(Policy.Policy):
             logger.debug('HDC policy: getConfirmSelect')
             done, output = self._getConfirmSelect(belief, array_slot_summary)
         if not done:
+            logger.debug('HDC policy: getSelectSlot')
+            # todo
+            done, output = self._getSelectSlot(belief, global_summary)
+        if not done:
             logger.debug('HDC policy: getInform')
             inform_summary = []
             for num_accepted in range(1, MAX_NUM_ACCEPTED+1):
@@ -179,6 +183,15 @@ class HDCPolicy(Policy.Policy):
                         return True, 'confirm(%s="%s")' % (slot, top_value)
 
         return False, 'null()'
+
+    def _getSelectSlot(self, belief, global_summary):
+        unsolved_slot_name = global_summary['GLOBAL_DONTCARE']
+        if unsolved_slot_name:
+            slot_names = Ontology.global_ontology.get_sorted_system_requestable_slots(self.domainString)
+            return True, 'select(' + ','.join(['%s="dontcare"' % s for s in slot_names]) + ')'
+        else:
+            return False, 'null()'
+
 
     def _getInform(self, belief, global_summary, inform_summary):
         act = 'null()'

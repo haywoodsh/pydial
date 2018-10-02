@@ -25,7 +25,8 @@
         "byname", 
         "finished", 
         "byalternatives", 
-        "restart"
+        "restart",
+        "dontcare"
     ],
     "system_requestable": [
         "food",

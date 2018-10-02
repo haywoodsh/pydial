@@ -594,7 +594,7 @@ inform(name=none,type=$U,$Y=$O,$Z=$P,$W=$R,$Q=$T,$G=$H,$B=$D) : "I am sorry but 
 
 inform(name=none,$Y=$O) : "I am sorry but there is no place %$Y_str($O).";
 inform(name=none,$Y=$O,$Z=$P) : "I am sorry but there is no place, %$Y_str($O) and %$Z_str($P).";
-inform(name=none,$Y=$O,$Z=$P,$W=$R) : "I am sorry but there is no place, %$Y_str($O), %$Z_str($P) and %$W_str($R).";
+inform(name=none,$Y=$O,$Z=$P,$W=$R) : "I am sorry but there is no place, %$Y_str($O), %$Z_str($P) and %$W_str($R). Would you like to change some requirements or is there anything you don't mind?";
 inform(name=none,$Y=$O,$Z=$P,$W=$R,$Q=$T) : "I am sorry but there is no place, %$Y_str($O), %$Z_str($P), %$W_str($R) and %$Q_str($T).";
 inform(name=none,$Y=$O,$Z=$P,$W=$R,$Q=$T,$G=$H) : "I am sorry but there is no place, %$Y_str($O), %$Z_str($P), %$W_str($R), %$Q_str($T) and %$G_str($H).";
 inform(name=none,$Y=$O,$Z=$P,$W=$R,$Q=$T,$G=$H,$B=$D) : "I am sorry but there is no place, %$Y_str($O), %$Z_str($P), %$W_str($R), %$Q_str($T), %$G_str($H) and %$B_str($D).";
@@ -646,6 +646,8 @@ select(hasinternet=true,hasinternet=false) : "Sorry would you like a place which
 select(acceptscreditcards=true, acceptscreditcards=dontcare) : "Sorry would you like it to accept credit cards or you don't care";
 select(acceptscreditcards=false, acceptscreditcards=dontcare) : "Sorry would you like it not to accept credit cards or you don't care";
 select(acceptscreditcards=true,acceptscreditcards=false) : "Sorry would you like a place which accepts credit cards or which doesn't accept credit cards";
+
+select(pricerange=dontcare,food=dontcare,area=dontcare) : "Sorry what do you not care about, price range, food, or area?";
 
 select(drinks=$X,drinks=$Y) : "Sorry would you like $X or $Y?";
 select(food=$X,food=$Y) : "Sorry would you like $X or $Y food?";

@@ -67,7 +67,8 @@ global_summary_features = ['GLOBAL_BYCONSTRAINTS',
                            'GLOBAL_RESTART',
                            'GLOBAL_COUNTACCEPTED',
                            'GLOBAL_NAMENONE',
-                           'GLOBAL_OFFERHAPPENED']
+                           'GLOBAL_OFFERHAPPENED',
+                           'GLOBAL_DONTCARE']
 
 REQUESTING_THRESHOLD = 0.5
 
@@ -102,6 +103,8 @@ def globalSummary(belief, domainString):
         summaryArray['GLOBAL_FINISHED'] = True
     elif topMethod == 'restart' and topMethodBelief > 0.5:
         summaryArray['GLOBAL_RESTART'] = True
+    elif topMethod == 'dontcare' and topMethodBelief > 0.5:
+        summaryArray['GLOBAL_DONTCARE'] = True
     else:
         summaryArray['GLOBAL_BYCONSTRAINTS'] = True
 

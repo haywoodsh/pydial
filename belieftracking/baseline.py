@@ -85,12 +85,17 @@ def labels(user_act, mact, lastInformedVenue):
             confirm_slots["explicit"] += act["slots"]
             this_slot = act["slots"][0][0]
 
+    # try:
+    #     print("this_slot: " + this_slot)
+    # except:
+    #     print("can't define slot! could be tracking domain or unsolved slot assigning")
+
     # lastInformedVenue by dk449
     for act in mact:
         if act["act"] == "offer":
             lastInformedVenue = act["slots"][0][1]
             
-            
+
     # goal_labels
     informed_goals = {}
     denied_goals = defaultdict(list)
@@ -156,6 +161,8 @@ def labels(user_act, mact, lastInformedVenue):
             slots = [slot for slot, _ in act["slots"]]
             if "name" in slots :
                 method = "byname"
+            if "unsolved" in slots :
+                method = "dontcare"
     # dk449
     elif "restart" in act_types:
         method = "restart"
@@ -178,7 +185,7 @@ def labels(user_act, mact, lastInformedVenue):
     elif "bye" in act_types:
         discourseAct = "bye"
             
-    return informed_goals, denied_goals, requested_slots, method, discourseAct, lastInformedVenue
+    return informed_goals , denied_goals, requested_slots, method, discourseAct, lastInformedVenue
 
   
 def Uacts(turn):
@@ -204,10 +211,18 @@ def Uacts(turn):
         this_slu_hyp = slu_hyp['slu-hyp']
         these_hyps =  []
         for  hyp in this_slu_hyp :
+            found = False
             for i in range(len(hyp["slots"])) :
                 slot,_ = hyp["slots"][i]
                 if slot == "this" :
-                    hyp["slots"][i][0] = this_slot
+                    if this_slot:
+                        hyp["slots"][i][0] = this_slot
+                    else:
+                        hyp["slots"][i][0] = 'unsolved'
+                    # print 'assigning ', this_slot , ' to ' , hyp["slots"][i]
+                    found = True
+            # if found == False:
+            #     hyp["slots"][i][0] = "unsolved"
             these_hyps.append(hyp)
         this_output.append((score, these_hyps))
     this_output.sort(key=lambda x:x[0], reverse=True)
@@ -255,6 +270,8 @@ class RuleBasedTracker(BeliefTracker):
         '''
 
         belief = {}
+        # print 'track: ', track['goal-labels']
+
         for slot in Ontology.global_ontology.get_informable_slots_and_values(self.domainString):
             if slot in track['goal-labels']:
                 infom_slot_vals = Ontology.global_ontology.get_informable_slot_values(self.domainString,slot)
@@ -272,7 +289,7 @@ class RuleBasedTracker(BeliefTracker):
         belief['method'] = dict.fromkeys(Ontology.global_ontology.get_method(self.domainString), 0.0)
         for v in track['method-label']:
             belief['method'][v] = track['method-label'][v]
-        belief['discourseAct'] = dict.fromkeys(Ontology.global_ontology.get_discourseAct(self.domainString), 0.0)
+        belief['discourseAct'] = dict.fromkeys(Ontology.global_ontology.get_discourseAct(self.domainString)+['REDUCE_CONSTRAINT'], 0.0)
         for v in track['discourseAct-labels']:
             belief['discourseAct'][v] = track['discourseAct-labels'][v]
         belief['requested'] = dict.fromkeys(Ontology.global_ontology.get_requestable_slots(self.domainString), 0.0)
